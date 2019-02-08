@@ -30,3 +30,10 @@
     transform: rotate(360deg);
   }
 }
+
+textarea {
+  width: 80%;
+  height: 200px;
+  margin-left: 10%;
+  display: block;
+}

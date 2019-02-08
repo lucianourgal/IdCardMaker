@@ -6,10 +6,16 @@ export default class groupOfPersons {
     logoFile: string;
     persons: person [];
 
-    constructor () {
-        this.principal = "João Claúdio Bittercourt Madureira";
+    constructor (txt: string) {
+        this.principal = "João Claúdio Madureira Bittercourt";
         this.logoFile = "IFPR.jpg";
         this.persons = [];
+
+        const protoP = txt.split("\n");
+        for (let a=0; a<protoP.length; a++) {
+            this.persons.push(new person(protoP[a]));
+        }
+
     }
 
 }

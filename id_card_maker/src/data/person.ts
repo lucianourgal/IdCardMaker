@@ -5,11 +5,14 @@ export default class person {
     expiresIn: string;
     pictureFile: string;
 
-    constructor() {
-        this.name = "Default name";
-        this.course = "Default course";
-        this.expiresIn = "29/02/2020"
-        this.pictureFile = "no file.jpg"
+    constructor(txt: string) {
+
+        let values = txt.split(",");
+
+        this.name = values[0];
+        this.course = values[1];
+        this.expiresIn = values[2];
+        this.pictureFile = this.name + ".jpg";
     }
 
 }

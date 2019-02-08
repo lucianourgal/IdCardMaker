@@ -1,8 +1,9 @@
-import react, { Component } from 'react';
-import "card.css";
+import React, { Component } from 'react';
+import "./card.css";
 import Textfield from '../misc/textfield';
+import Picture from "../misc/picture";
 
-class front extends Component {
+export default class front extends Component {
     // picture, name, course
 
     render() {
