@@ -1,6 +1,6 @@
 import react, { Component } from 'react';
 import "card.css";
-import textfield from '../misc/textfield';
+import Textfield from '../misc/textfield';
 
 class front extends Component {
     // picture, name, course
