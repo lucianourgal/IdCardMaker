@@ -7,7 +7,7 @@ export default class groupOfPersons {
     persons: person [];
 
     constructor (txt: string) {
-        this.principal = "João Claúdio Madureira Bittercourt";
+        this.principal = "João Cláudio Madureira Bittercourt";
         this.logoFile = "IFPR.jpg";
         this.persons = [];
 
@@ -15,6 +15,8 @@ export default class groupOfPersons {
         for (let a=0; a<protoP.length; a++) {
             this.persons.push(new person(protoP[a]));
         }
+
+        console.log("groupOfPersons object has " + this.persons.length + " persons.")
 
     }
 
