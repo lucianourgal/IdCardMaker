@@ -7,8 +7,9 @@ export default class back extends Component {
     render() {
 
         return (
-            <div className="card">
-                
+            <div className="card back">
+                <div className="signature">{this.props.princ}</div>
+                <p className="expires">Expira em {this.props.exp}</p>
             </div>
         )
 

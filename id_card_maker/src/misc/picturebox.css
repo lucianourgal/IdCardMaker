@@ -1,0 +1,10 @@
+.picturebox {
+    margin: 15% auto;
+    
+    width: 42%;
+    height: 50%;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+}

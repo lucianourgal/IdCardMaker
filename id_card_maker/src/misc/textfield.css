@@ -1,4 +1,6 @@
-p {
-border: 2px black solid,   
-
+.tf {
+border: 2px black solid;
+margin: .3em .7em;   
+display: flex;
+align-items: center;
 }

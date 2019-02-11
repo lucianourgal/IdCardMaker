@@ -8,9 +8,11 @@ export default class Page extends Component {
 
 render () {
 
+    console.log("Page.jsx: This page has " +  this.props.group.persons.length + " persons.");
+
     const personsJsx = this.props.front ? 
-        this.props.persons.map(cur => <Front pic={cur.pictureFile} name={cur.name} course={cur.course}/>) :
-        this.props.persons.map(cur => <Back logo={cur.logo} princ={cur.principal} exp={cur.expiresIn}/>);
+        this.props.group.persons.map(cur => <Front name={cur.name} course={cur.course} key={cur.name+"F"}/>) :
+        this.props.group.persons.map(cur => <Back princ={this.props.group.principal} exp={cur.expiresIn} key={cur.name+"B"}/>);
 
     return (
         <div className="page">
