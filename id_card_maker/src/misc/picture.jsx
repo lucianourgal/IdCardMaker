@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./picturebox.css";
 
-export default props => <div className="picturebox"><img src={require("../customimg/Name nmb 1.JPG")}/></div>
-//<div className="picturebox">{props.src}</div>
-//<div className="picturebox"><img src={require('../customimg/' + props.src + '.jpg')}/></div>
+export default class picbox extends Component {
+
+    render () {
+
+        let image;
+        try {
+            image = <img src={require('../customimg/' + this.props.src + '.JPG')}/>;
+        } catch {
+            image = "'"+this.props.src+".JPG' not found";
+        }
+
+        return (
+            <div className="picturebox">
+                { image }
+            </div>
+        )
+    }
+}
