@@ -29,8 +29,8 @@ render() {
     newGrou2.setPersons(tempPersons);
     pagesG.push(newGrou2);
 
-    const frontPages = pagesG.map( (cur, i) => <Page front={true} group={cur} key={i+"_FPag"} pag={(i+1)+"_FPag"}/>);
-    const backPages = pagesG.map( (cur, i) => <Page front={false} group={cur} key={i+"_BPag"} pag={(i+1)+"_BPag"}/>);
+    const frontPages = pagesG.map( (cur, i) => <Page front={true} group={cur} key={i+"_FPag"} pag={(i+1)+"_Front"}/>);
+    const backPages = pagesG.map( (cur, i) => <Page front={false} group={cur} key={i+"_BPag"} pag={(i+1)+"_Back"}/>);
 
     return (
     <div className="allPages">

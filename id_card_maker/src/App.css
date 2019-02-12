@@ -18,3 +18,10 @@ button {
   width: 200px;
   height: 40px;
 }
+
+header {
+  background-color: darkolivegreen;
+  padding: 1.5em;
+  border-radius: 10em;
+  margin: .5em 4em;
+}

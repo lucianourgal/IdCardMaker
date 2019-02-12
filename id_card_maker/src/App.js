@@ -39,8 +39,13 @@ class App extends Component {
       <div className="App">
           { this.state.renderPages ? <Pagepack group={this.group}/> :
           <div>
-            <h1>Input the persons data in the following format:</h1>
-            <h4>Name, course, expireDate, Document</h4>
+            <header>
+              <h1>Id card maker</h1>
+              <p>Software developed by Luciano Urgal Pando</p>
+              <p>Please donate Bitcoin (BTC) to address bc1qzwlp2yzl783pskg9vrueuwhda7lrfmg3gc6enl</p>
+            </header>
+            <h3>Input the persons data in the following format:</h3>
+            <p>Name, course, expireDate, Document</p>
             <textarea value={this.state.text} onChange={this.txtChange}/>
             <button onClick={this.generatePages}>Generate Id cards</button>
           </div> }

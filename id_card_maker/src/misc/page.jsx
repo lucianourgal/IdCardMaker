@@ -17,7 +17,8 @@ render () {
     return (
         <div className="page">
             { personsJsx }
-            <p>{this.props.pag }</p>
+            <p>Page {this.props.pag }. </p>
+            <p>Software developed by Luciano Urgal Pando</p>
         </div>
     )
 
