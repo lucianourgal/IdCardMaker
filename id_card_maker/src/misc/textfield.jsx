@@ -1,4 +1,4 @@
 import React from 'react'
 import './textfield.css'
 
-export default props => <p>props.text</p>
+export default props => <div className="tf">{props.text}</div>

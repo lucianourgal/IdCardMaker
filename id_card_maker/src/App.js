@@ -42,7 +42,7 @@ class App extends Component {
     return (
       <div className="App">
           <h1>Input the persons data in the following format:</h1>
-          <h4>Name, course, pictureFile</h4>
+          <h4>Name, course, expireDate</h4>
           <textarea value={this.state.text} onChange={this.txtChange}/>
           <button onClick={this.generatePages}>Generate Id cards</button>
           { pages }

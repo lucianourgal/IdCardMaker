@@ -20,4 +20,8 @@ export default class groupOfPersons {
 
     }
 
+    setPersons = (persons: person []) => {
+        this.persons = persons;
+    }
+
 }

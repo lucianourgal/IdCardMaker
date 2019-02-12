@@ -1,4 +1,33 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    text-align: bottom;
+    justify-content: bottom;
+
     width: 30%;
     height: 30%;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.signature {
+    font-size: 0.6em;
+    margin-top: 90%;
+    margin-bottom: 0;
+}
+
+.expires {
+    font-size: 0.8em;
+}
+
+.back {
+    background-image: url("../img/back2.PNG");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.front {
+    background-image: url("../img/front.PNG");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
