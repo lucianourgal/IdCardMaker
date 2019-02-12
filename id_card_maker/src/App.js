@@ -13,7 +13,7 @@ class App extends Component {
     for (let x = 1; x < 20; x++) {
       txaDefaultText = txaDefaultText + "Name nmb " + x + ", Course nbm " + x +", 29/02/2020\n";
     }
-    txaDefaultText = txaDefaultText + "João Carlos da Silva, Técnico em Eletromecânica, 31/12/2020";
+    txaDefaultText = txaDefaultText + "João Carlos da Silva, Téc. em Eletromecânica - T 2019, 31/12/2020";
 
     this.state = {
       text: txaDefaultText,
