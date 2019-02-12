@@ -11,9 +11,9 @@ class App extends Component {
 
     let txaDefaultText = "";
     for (let x = 1; x < 20; x++) {
-      txaDefaultText = txaDefaultText + "Name nmb " + x + ", Course nbm " + x +", 29/02/2020\n";
+      txaDefaultText = txaDefaultText + "Name nmb " + x + ", Course nbm " + x +", 29/02/2020, 123455\n";
     }
-    txaDefaultText = txaDefaultText + "João Carlos da Silva, Téc. em Eletromecânica - T 2019, 31/12/2020";
+    txaDefaultText = txaDefaultText + "João Carlos da Silva, Téc. em Eletromecânica - T 2019, 31/12/2020, 139719";
 
     this.state = {
       text: txaDefaultText,
@@ -40,7 +40,7 @@ class App extends Component {
           { this.state.renderPages ? <Pagepack group={this.group}/> :
           <div>
             <h1>Input the persons data in the following format:</h1>
-            <h4>Name, course, expireDate</h4>
+            <h4>Name, course, expireDate, Document</h4>
             <textarea value={this.state.text} onChange={this.txtChange}/>
             <button onClick={this.generatePages}>Generate Id cards</button>
           </div> }

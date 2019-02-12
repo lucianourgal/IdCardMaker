@@ -11,8 +11,9 @@ export default class front extends Component {
         return (
             <div className="card front">
                 <Picture src={this.props.name}/>
-                <Textfield text={this.props.name}/>
-                <Textfield text={this.props.course}/>
+                <Textfield text={this.props.name} label={"Nome"}/>
+                <Textfield text={this.props.rg} label={"RG"}/>
+                <Textfield text={this.props.course} label={"Curso"}/>
             </div>
         )
 
