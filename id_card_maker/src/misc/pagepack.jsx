@@ -16,7 +16,7 @@ render() {
     for (let x=0; x< allPersons.length; x++) {
 
         tempPersons.push(allPersons[x]);
-        if ( x % (personsPerPage-1) === 0 && x !== 0){
+        if ( (x+1) % (personsPerPage) === 0 && x !== 0){
             const newGrou = new groupOfPersons("texte,texte,text");
             newGrou.setPersons(tempPersons);
             pagesG.push(newGrou);

@@ -10,7 +10,7 @@ export default class front extends Component {
 
         return (
             <div className="card front">
-                <Picture src={this.props.pic}/>
+                <Picture src={this.props.name}/>
                 <Textfield text={this.props.name}/>
                 <Textfield text={this.props.course}/>
             </div>

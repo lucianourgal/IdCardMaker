@@ -3,12 +3,10 @@ import person from "./person";
 export default class groupOfPersons {
 
     principal: string;
-    logoFile: string;
     persons: person [];
 
     constructor (txt: string) {
-        this.principal = "João Cláudio Madureira Bittercourt";
-        this.logoFile = "IFPR.jpg";
+        this.principal = "João Claudio Bittecourt Madureira";
         this.persons = [];
 
         const protoP = txt.split("\n");

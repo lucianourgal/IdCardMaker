@@ -35,17 +35,15 @@ class App extends Component {
 
   render() {
 
-    const pages = this.state.renderPages ?
-    <Pagepack group={this.group}/>
-    : null;
-
     return (
       <div className="App">
-          <h1>Input the persons data in the following format:</h1>
-          <h4>Name, course, expireDate</h4>
-          <textarea value={this.state.text} onChange={this.txtChange}/>
-          <button onClick={this.generatePages}>Generate Id cards</button>
-          { pages }
+          { this.state.renderPages ? <Pagepack group={this.group}/> :
+          <div>
+            <h1>Input the persons data in the following format:</h1>
+            <h4>Name, course, expireDate</h4>
+            <textarea value={this.state.text} onChange={this.txtChange}/>
+            <button onClick={this.generatePages}>Generate Id cards</button>
+          </div> }
       </div>
     );
   }

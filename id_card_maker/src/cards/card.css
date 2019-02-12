@@ -11,17 +11,35 @@
 }
 
 .signature {
-    font-size: 0.6em;
-    margin-top: 90%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    border-top: 1px solid black;
+    font-size: 0.58em;
+    float: top;
     margin-bottom: 0;
+
+    position: relative;
+    bottom: -26em;  
+}
+
+.job {
+    font-size: 0.6em;
+    float: top;
+
+    position: relative;
+    bottom: -25.2em;  
 }
 
 .expires {
-    font-size: 0.8em;
+    font-size: 0.7em;
+    position: relative;
+    bottom: -22em;
+    font-weight: bold;   
 }
 
 .back {
-    background-image: url("../img/back2.PNG");
+    background-image: url("../img/back3.PNG");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
