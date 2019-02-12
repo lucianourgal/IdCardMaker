@@ -1,3 +1,7 @@
+* {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari: Print background-image */
+}
+
 .card {
     display: flex;
     flex-direction: column;
