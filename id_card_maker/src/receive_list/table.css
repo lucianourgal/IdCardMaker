@@ -1,0 +1,28 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+th {
+    background-color: #eaeaeaea;
+}
+
+
+table td:nth-child(1) {
+    width: 10%;
+}
+
+table td:nth-child(2) {
+    width: 50%;
+}
+
+table td:nth-child(3) {
+    width: 40%;
+}

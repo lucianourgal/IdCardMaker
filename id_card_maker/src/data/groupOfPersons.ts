@@ -22,4 +22,12 @@ export default class groupOfPersons {
         this.persons = persons;
     }
 
+    addPerson = (pers: person) => {
+        this.persons.push(pers);
+    }
+
+    clearPersons = () => {
+        this.persons = [];
+    }
+
 }
