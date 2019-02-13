@@ -5,6 +5,7 @@ export default class person {
     expiresIn: string;
     pictureFile: string;
     rg: string;
+    birthDate: string;
 
     constructor(txt: string) {
 
@@ -13,8 +14,17 @@ export default class person {
         this.name = values[0];
         this.course = values[1];
         this.expiresIn = values[2];
-        this.rg = values[3];
+        this.rg = this.getData(values,3);
+        this.birthDate = this.getData(values,4);
+
         this.pictureFile = this.name + ".jpg";
+    }
+
+    getData = (vet: string [], i: number) => {
+        if(vet[i]) {
+            return vet[i];
+        }
+        return "";
     }
 
 }
