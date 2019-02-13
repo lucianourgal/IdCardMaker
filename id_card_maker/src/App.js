@@ -18,13 +18,18 @@ class App extends Component {
     this.state = {
       text: txaDefaultText,
       renderPages: false,
-      principal: "João Claudio Bittecourt Madureira"
+      principal: "João Claudio Bittecourt Madureira",
+      typeB: true
     } 
 
   }
 
   txtChange = (e) => {
     this.setState({text: e.target.value});
+  }
+
+  principalChangeHandler = (e) => {
+    this.setState({principal: e.target.value});
   }
 
   generatePages = () => {
@@ -38,7 +43,7 @@ class App extends Component {
 
     return (
       <div className="App">
-          { this.state.renderPages ? <Pagepack group={this.group}/> :
+          { this.state.renderPages ? <Pagepack group={this.group} typeB={this.state.typeB}/> :
           <div>
             <header>
               <h1>Id card maker</h1>
@@ -47,6 +52,15 @@ class App extends Component {
             </header>
             <h3>Input the persons data in the following format:</h3>
             <p>Name, course, expireDate, Document (optional), birthDate (optional)</p>
+
+            <label>Principal name: 
+              <input label="Principal" type="text" value={this.state.principal} onChange={this.principalChangeHandler}/>
+            </label>
+
+            <label>Card type B: 
+              <input type="checkbox" value={this.state.typeB}/>
+            </label>
+
             <textarea value={this.state.text} onChange={this.txtChange}/>
             <button onClick={this.generatePages}>Generate Id cards</button>
           </div> }

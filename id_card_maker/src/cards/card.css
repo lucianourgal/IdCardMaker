@@ -12,6 +12,7 @@
     height: 30%;
     display: inline-block;
     border: 2px solid black;
+    position: relative;
 }
 
 .signature {
@@ -20,17 +21,25 @@
 
     border-top: 1px solid black;
     font-size: 0.58em;
-    float: top;
     margin-bottom: 0;
+}
 
+.back .signature {
     position: relative;
+    float: top;
     bottom: -26em;  
+}
+
+.back2 .signature {
+    margin-top: 15%;
 }
 
 .job {
     font-size: 0.6em;
     float: top;
+}
 
+.back .job {
     position: relative;
     bottom: -25.2em;  
 }
@@ -52,4 +61,21 @@
     background-image: url("../img/front.PNG");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+.back2 img {
+    width: 95%;
+    position: absolute;
+    bottom: 4px;
+    left: 2.5%;
+}
+
+.front2 img {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.front2 p {
+    font-size: 0.9em;
+    margin-bottom: 0;
 }

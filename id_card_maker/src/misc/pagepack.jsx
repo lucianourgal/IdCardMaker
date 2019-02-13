@@ -17,7 +17,7 @@ render() {
 
         tempPersons.push(allPersons[x]);
         if ( (x+1) % (personsPerPage) === 0 && x !== 0){
-            const newGrou = new groupOfPersons("texte,texte,text");
+            const newGrou = new groupOfPersons("texte,texte,text", this.props.group.principal);
             newGrou.setPersons(tempPersons);
             pagesG.push(newGrou);
             if ( x !== (allPersons.lenght -1)) {
@@ -25,12 +25,15 @@ render() {
             }
         }
     } // last (incomplete) page
-    const newGrou2 = new groupOfPersons("");
+    const newGrou2 = new groupOfPersons("", this.props.group.principal);
     newGrou2.setPersons(tempPersons);
     pagesG.push(newGrou2);
 
-    const frontPages = pagesG.map( (cur, i) => <Page front={true} group={cur} key={i+"_FPag"} pag={(i+1)+"_Front"}/>);
-    const backPages = pagesG.map( (cur, i) => <Page front={false} group={cur} key={i+"_BPag"} pag={(i+1)+"_Back"}/>);
+    const frontPages = pagesG.map( (cur, i) => 
+    <Page front={true} group={cur} key={i+"_FPag"} pag={(i+1)+"_Front"} typeB={this.props.typeB}/>);
+
+    const backPages = pagesG.map( (cur, i) => 
+    <Page front={false} group={cur} key={i+"_BPag"} pag={(i+1)+"_Back"} typeB={this.props.typeB}/>);
 
     return (
     <div className="allPages">

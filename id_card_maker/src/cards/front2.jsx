@@ -10,10 +10,11 @@ export default class front2 extends Component {
 
         return (
             <div className="card front2">
+                <img src={require("../img/IFPRheader.PNG")} alt={"IFPR logo"}/>
+                <p>IDENTIDADE ESTUDANTIL</p>
                 <Picture src={this.props.name}/>
-                <Textfield text={this.props.name} label={"Nome"}/>
-                <Textfield text={this.props.rg} label={"RG"}/>
-                <Textfield text={this.props.course} label={"Curso"}/>
+                <Textfield text={this.props.name.split(" ")[0]} label={"Nome"}/>
+                <Textfield text={this.props.course} label={"Curso"} large={true}/>
             </div>
         )
 

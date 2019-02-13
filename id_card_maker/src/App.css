@@ -25,3 +25,8 @@ header {
   border-radius: 10em;
   margin: .5em 4em;
 }
+
+input {
+  width: 300px;
+  margin-bottom: 35px;
+}

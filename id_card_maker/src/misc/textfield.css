@@ -1,19 +1,44 @@
 .tf {
-border: 2px black solid;
+border: 1px black solid;
 margin: .3em .7em;   
 display: flex;
 align-items: center;
 background-color: #eee;
 font-size: 0.8em;
 font-family: Arial, Helvetica, sans-serif;
-height: 1.5em;
+height: 2.1em;
 padding: 0 1em;
 display: inline-block;
 width: 65%;
+border-radius: 10px;
+}
+
+.back2 .tf {
+    margin-top: 0;
+}
+
+.large {
+    height: 2.7em;
+    vertical-align: bottom;
 }
 
 .data {
     font-size: 0.7em;
     display: inline-block;
     width: 12%;
+}
+
+.back2 .data{
+    display: block;
+    width: 60%;
+    height: 1.1em;
+    text-align: left;
+    padding-left: 3em;
+    margin-top: 0.77em;
+    margin-bottom: 0;
+}
+
+.front2 .data {
+    height: 2.7em;
+    vertical-align: center;
 }
