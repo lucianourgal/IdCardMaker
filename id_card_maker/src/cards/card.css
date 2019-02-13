@@ -27,11 +27,12 @@
 .back .signature {
     position: relative;
     float: top;
-    bottom: -26em;  
+    bottom: -27.4em;  
 }
 
 .back2 .signature {
-    margin-top: 15%;
+    margin-top: 20%;
+    font-size: 0.68em;
 }
 
 .job {
@@ -41,13 +42,13 @@
 
 .back .job {
     position: relative;
-    bottom: -25.2em;  
+    bottom: -26.5em;  
 }
 
 .expires {
     font-size: 0.7em;
     position: relative;
-    bottom: -22em;
+    bottom: -24em;
     font-weight: bold;   
 }
 
@@ -76,6 +77,6 @@
 }
 
 .front2 p {
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-bottom: 0;
 }

@@ -1,7 +1,7 @@
 .picturebox {
     margin: 11% auto;
     
-    width: 42%;
+    width: 50%;
     height: 50%;
     border: 1px solid black;
 
@@ -10,15 +10,14 @@
     overflow: hidden;
 }
 
-.picturebox img {
-    width: 200px;
-    height: 100%;
-    transform: translateX(-44px);
-}
-
 .front2 .picturebox {
     margin: 7% auto;
     width: 40%;
     height: 40%;
-    border: 1px solid black;
+}
+
+.picturebox img {
+    width: 200px;
+    height: 100%;
+    transform: translateX(-44px);
 }
