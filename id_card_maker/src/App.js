@@ -17,7 +17,8 @@ class App extends Component {
 
     this.state = {
       text: txaDefaultText,
-      renderPages: false
+      renderPages: false,
+      principal: "João Claudio Bittecourt Madureira"
     } 
 
   }
@@ -28,7 +29,7 @@ class App extends Component {
 
   generatePages = () => {
     
-    this.group = new groupOfPersons(this.state.text);
+    this.group = new groupOfPersons(this.state.text, this.state.principal);
     this.setState({renderPages: true});
 
   }
