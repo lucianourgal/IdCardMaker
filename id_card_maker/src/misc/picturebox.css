@@ -8,6 +8,8 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    position: relative;
+    
 }
 
 .front2 .picturebox {
@@ -19,5 +21,9 @@
 .picturebox img {
     width: 200px;
     height: 100%;
-    transform: translateX(-44px);
+    
+    margin-top: 0;
+    position: absolute;
+    left: -50%;
 }
+/*transform: translateX(-44px);*/
