@@ -16,13 +16,28 @@ th {
 
 
 table td:nth-child(1) {
-    width: 10%;
+    width: 7%;
 }
 
 table td:nth-child(2) {
-    width: 50%;
+    width: 43%;
 }
 
 table td:nth-child(3) {
-    width: 40%;
+    width: 20%;
+}
+
+table td:nth-child(4) {
+    width: 30%;
+}
+
+.tablePage {
+    position: relative;
+}
+
+.bottomImgTable {
+    position: absolute;
+    bottom: 2em;
+    width: 70%;
+    left: 15%;
 }

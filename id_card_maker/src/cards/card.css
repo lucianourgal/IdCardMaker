@@ -64,9 +64,9 @@
     background-repeat: no-repeat;
 }
 
-.back2 img {
-    width: 95%;
+.back2 img {   
     position: absolute;
+    width: 95%;
     bottom: 4px;
     left: 2.5%;
 }

@@ -6,7 +6,7 @@ export default class groupOfPersons {
     persons: person [];
 
     constructor (txt: string, princ: string) {
-        this.principal = princ;
+        this.principal = princ;//"João Claudio Bittecourt Madureira";
         this.persons = [];
 
         const protoP = txt.split("\n");
@@ -14,7 +14,7 @@ export default class groupOfPersons {
             this.persons.push(new person(protoP[a]));
         }
 
-        console.log("groupOfPersons object has " + this.persons.length + " persons. Principal is " + princ)
+        console.log("groupOfPersons object has " + this.persons.length + " persons.")
 
     }
 
@@ -22,8 +22,8 @@ export default class groupOfPersons {
         this.persons = persons;
     }
 
-    addPerson = (pers: person) => {
-        this.persons.push(pers);
+    addPerson = (perso: person) => {
+        this.persons.push(perso);
     }
 
     clearPersons = () => {
