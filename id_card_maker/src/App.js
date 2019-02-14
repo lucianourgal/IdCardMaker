@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import groupOfPersons from './data/groupOfPersons';
 import Pagepack from "../src/misc/pagepack";
+import AllLists from './receive_list/AllReceiveLists';
 
 class App extends Component {
 
@@ -10,8 +11,8 @@ class App extends Component {
     super(props);
 
     let txaDefaultText = "";
-    for (let x = 1; x < 20; x++) {
-      txaDefaultText = txaDefaultText + "Name nmb " + x + ", Course nbm " + x +", 29/02/2020, 123455, 01/01/2000\n";
+    for (let x = 1; x < 170; x++) {
+      txaDefaultText = txaDefaultText + "Name nmb " + x + ", Course nbm " + (1+x%3) +", 29/02/2020, 123455, 01/01/2000\n";
     }
     txaDefaultText = txaDefaultText + "João Carlos da Silva, Téc. em Eletromecânica - T 2019, 31/12/2020, 139719, 10/05/1996";
 
@@ -43,7 +44,10 @@ class App extends Component {
 
     return (
       <div className="App">
-          { this.state.renderPages ? <Pagepack group={this.group} typeB={this.state.typeB}/> :
+          { this.state.renderPages ? [
+          <Pagepack group={this.group} typeB={this.state.typeB} key={"pagepack"}/> ,
+          <AllLists group={this.group} key={"receiveLists"}/>]
+          :
           <div>
             <header>
               <h1>Id card maker</h1>

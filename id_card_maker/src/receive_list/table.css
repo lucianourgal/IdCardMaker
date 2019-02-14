@@ -1,0 +1,43 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+th {
+    background-color: #eaeaeaea;
+}
+
+
+table td:nth-child(1) {
+    width: 7%;
+}
+
+table td:nth-child(2) {
+    width: 43%;
+}
+
+table td:nth-child(3) {
+    width: 20%;
+}
+
+table td:nth-child(4) {
+    width: 30%;
+}
+
+.tablePage {
+    position: relative;
+}
+
+.bottomImgTable {
+    position: absolute;
+    bottom: 2em;
+    width: 70%;
+    left: 15%;
+}
