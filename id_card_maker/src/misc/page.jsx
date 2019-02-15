@@ -19,7 +19,7 @@ generateTypeA = () => {
 generateTypeB = () => {
     return this.props.front ?  
         this.props.group.persons.map(cur => 
-        <Front2 name={cur.name} course={cur.course} key={cur.name+"F"} nick={cur.nickname}/>) :
+        <Front2 name={cur.name} course={cur.course} key={cur.name+"F"} nick={cur.nickname} registry={cur.registryNumber}/>) :
         this.props.group.persons.map(cur => 
         <Back2 princ={this.props.group.principal} 
         exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={cur.name+"B"}/>);

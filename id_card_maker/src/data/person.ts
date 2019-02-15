@@ -7,6 +7,7 @@ export default class person {
     pictureFile: string;
     rg: string;
     birthDate: string;
+    registryNumber: string;
 
     constructor(txt: string) {
 
@@ -17,7 +18,8 @@ export default class person {
         this.expiresIn = values[2];
         this.rg = this.getData(values,3);
         this.birthDate = this.getData(values,4);
-        this.nickname = this.getData(values,5);
+        this.registryNumber = this.getData(values,5);
+        this.nickname = this.getData(values,6);
 
         this.pictureFile = this.name + ".jpg";
     }

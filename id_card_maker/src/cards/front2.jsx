@@ -15,6 +15,7 @@ export default class front2 extends Component {
                 <img src={require("../img/IFPRheader.PNG")} alt={"IFPR logo"}/>
                 <p>IDENTIDADE ESTUDANTIL</p>
                 <Picture src={this.props.name}/>
+                <div className="personRegistryField">{this.props.registry}</div>
                 <Textfield text={nicknam} label={"Nome"}/>
                 <Textfield text={this.props.course} label={"Curso"} large={true}/>
             </div>

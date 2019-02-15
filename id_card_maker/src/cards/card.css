@@ -80,3 +80,11 @@
     font-size: 0.8em;
     margin-bottom: 0;
 }
+
+.front2 .personRegistryField {
+    display: inline-block;
+    position: absolute;
+    right: -26px;
+    top: 45%;
+    transform: rotate(270deg);
+}
