@@ -7,9 +7,11 @@ export default class back2 extends Component {
 
     render() {
         // NOme compl, RG, nascimento validade, assinatura
+        const name = this.props.name.split("– ")[0];
+            
         return (
             <div className="card back2">
-                <Textfield text={this.props.name} label={"Nome completo"} large={true}/>
+                <Textfield text={name} label={"Nome completo"} large={true}/>
                 <Textfield text={this.props.rg} label={"RG"}/>
                 <Textfield text={this.props.nasc} label={"Data de Nascimento"}/>
                 <Textfield text={this.props.exp} label={"Validade"}/>

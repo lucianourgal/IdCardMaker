@@ -11,7 +11,7 @@ export default class person {
 
     constructor(txt: string) {
 
-        let values = txt.split(",");
+        let values = txt.split(";");
 
         this.name = values[0];
         this.course = values[1];
