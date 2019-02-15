@@ -14,7 +14,7 @@ export default class groupOfPersons {
             this.persons.push(new person(protoP[a]));
         }
 
-        console.log("groupOfPersons object has " + this.persons.length + " persons.")
+        // console.log("groupOfPersons object has " + this.persons.length + " persons.")
 
     }
 

@@ -8,7 +8,7 @@ render() {
 
     const personsPerPage = 9;
     const allPersons = this.props.group.persons;
-    console.log("Pagepack.jsx: We have a totoal of " + allPersons.length + " persons.");
+    // console.log("Pagepack.jsx: We have a total of " + allPersons.length + " persons.");
 
     let pagesG =  [];
     let tempPersons = [];
@@ -36,6 +36,7 @@ render() {
     <Page front={false} group={cur} key={i+"_BPag"} pag={(i+1)+"_Back"} typeB={this.props.typeB}/>);
 
     return (
+     this.props.hide  ? null :
     <div className="allPages">
         { frontPages }
         { backPages }

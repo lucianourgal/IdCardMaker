@@ -28,7 +28,7 @@ generateTypeB = () => {
 
 render () {
 
-    console.log("Page.jsx: This page has " +  this.props.group.persons.length + " persons.");
+    // console.log("Page.jsx: This page has " +  this.props.group.persons.length + " persons.");
 
     const personsJsx =  this.props.typeB ? this.generateTypeB() : this.generateTypeA();
         

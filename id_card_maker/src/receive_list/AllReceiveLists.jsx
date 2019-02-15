@@ -39,6 +39,7 @@ export default class allLists extends Component {
                   k={cur.persons[0].course+"_inner"} key={cur.persons[0].course+"_out"}/>);
 
         return (
+            this.props.hide ? null :
             <div className="allPages">
                 { pages }
             </div>

@@ -10,6 +10,7 @@ textarea {
   width: 80%;
   height: 200px;
   margin-left: 10%;
+  margin-top: 40px;
   display: block;
 }
 
@@ -28,5 +29,10 @@ header {
 
 input {
   width: 300px;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
+}
+
+.princChoose {
+  width: 100%;
+
 }
