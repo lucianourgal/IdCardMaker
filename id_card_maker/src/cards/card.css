@@ -84,7 +84,7 @@
 .front2 .personRegistryField {
     display: inline-block;
     position: absolute;
-    right: -26px;
+    right: -32px;
     top: 45%;
     transform: rotate(270deg);
 }
