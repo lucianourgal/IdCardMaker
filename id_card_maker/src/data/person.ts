@@ -1,6 +1,7 @@
 export default class person {
 
     name: string;
+    nickname: string;
     course: string;
     expiresIn: string;
     pictureFile: string;
@@ -16,6 +17,7 @@ export default class person {
         this.expiresIn = values[2];
         this.rg = this.getData(values,3);
         this.birthDate = this.getData(values,4);
+        this.nickname = this.getData(values,5);
 
         this.pictureFile = this.name + ".jpg";
     }

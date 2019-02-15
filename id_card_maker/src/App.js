@@ -12,14 +12,14 @@ class App extends Component {
 
     let txaDefaultText = "";
     for (let x = 1; x < 170; x++) {
-      txaDefaultText = txaDefaultText + "Name nmb " + x + ", Course nbm " + (1+x%3) +", 29/02/2020, 123455, 01/01/2000\n";
+      txaDefaultText = txaDefaultText + "Name nmb " + x + ", Course nbm " + (1+x%3) +", 29/02/2020, 123455, 01/01/2000, Apelido\n";
     }
     txaDefaultText = txaDefaultText + "João Carlos da Silva, Téc. em Eletromecânica - T 2019, 31/12/2020, 139719, 10/05/1996";
 
     this.state = {
       text: txaDefaultText,
       renderPages: false,
-      principal: "João Claudio Bittecourt Madureira",
+      principal: "João Claudio Madureira",
       typeB: true
     } 
 
@@ -55,7 +55,7 @@ class App extends Component {
               <p>Please donate Bitcoin (BTC) to address bc1qzwlp2yzl783pskg9vrueuwhda7lrfmg3gc6enl</p>
             </header>
             <h3>Input the persons data in the following format:</h3>
-            <p>Name, course, expireDate, Document (optional), birthDate (optional)</p>
+            <p>Name, course, expireDate, Document (optional), birthDate (optional), nickName(optional)</p>
 
             <label>Principal name: 
               <input label="Principal" type="text" value={this.state.principal} onChange={this.principalChangeHandler}/>

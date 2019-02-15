@@ -16,8 +16,8 @@
 }
 
 .signature {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 16%;
+    margin-right: 16%;
 
     border-top: 1px solid black;
     font-size: 0.58em;
@@ -32,11 +32,11 @@
 
 .back2 .signature {
     margin-top: 20%;
-    font-size: 0.68em;
+    font-size: 0.8em;
 }
 
 .job {
-    font-size: 0.6em;
+    font-size: 0.7em;
     float: top;
 }
 
