@@ -12,6 +12,8 @@
 /build
 
 # misc
+/src/customimg
+/customimg
 .DS_Store
 .env.local
 .env.development.local
