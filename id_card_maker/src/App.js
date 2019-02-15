@@ -12,9 +12,9 @@ class App extends Component {
 
     let txaDefaultText = "";
     for (let x = 1; x < 30; x++) {
-      txaDefaultText = txaDefaultText + "Name nmb " + x + ", Course nbm " + (1+x%3) +", 29/02/2020, 123455, 01/01/2000, 20193026231, Apelido\n";
+      txaDefaultText = txaDefaultText + "Name nmb " + x + ";Course nbm " + (1+x%3) +";29/02/2020; 123455; 01/01/2000; 20193026231; Apelido\n";
     }
-    txaDefaultText = txaDefaultText + "João Carlos da Silva, Téc. em Eletromecânica - T 2019, 31/12/2020, 139719, 10/05/1996, matriclas";
+    txaDefaultText = txaDefaultText + "João Carlos da Silva; Téc. em Eletromecânica - T 2019; 31/12/2020; 139719; 10/05/1996; matriclas";
 
     this.state = {
       text: txaDefaultText,
