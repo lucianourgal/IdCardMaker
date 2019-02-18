@@ -11,7 +11,7 @@ export default class RecieveTable extends Component {
     year = "x";
 
     createLine = (i, name) => {
-        name = name.split("– ")[0];
+        name = name.split("– ")[0].split("-")[0];
         this.lastIndex = i;
         const line = <tr key={i+"_"+ name}>
                         <td>{i+1}</td>

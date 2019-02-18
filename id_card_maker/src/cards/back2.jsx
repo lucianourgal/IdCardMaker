@@ -7,7 +7,7 @@ export default class back2 extends Component {
 
     render() {
         // NOme compl, RG, nascimento validade, assinatura
-        const name = this.props.name.split("– ")[0];
+        const name = this.props.name.split("– ")[0].split("-")[0];
             
         return (
             <div className="card back2">
