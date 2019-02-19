@@ -33,11 +33,11 @@ export default class RecieveTable extends Component {
         
     }
 
-    createPage = (lines, keyX) => {
+    createPage = (lines, keyX, actual, twoPages) => {
        return <div className="page tablePage" key={keyX}>
             <img src={require("../img/IFPRheader.PNG")} alt={"IFPR logo"}/>
-            <h3>Lista de entrega de carteirinhas de estudante</h3>
-            <h4>Curso {this.props.group.persons[0].course}</h4>
+            <h3>Lista de entrega de carteirinhas de estudante </h3>
+            <h4>Curso {this.props.group.persons[0].course} (Página {actual} / {twoPages ? 2 : 1})</h4>
             <p>{this.data}</p>
             <table>
                 <thead>
@@ -57,11 +57,11 @@ export default class RecieveTable extends Component {
     }
 
     createFirstPage = () => {
-        return this.createPage(this.firstPageLines, this.props.k+"_1");
+        return this.createPage(this.firstPageLines, this.props.k+"_1", 1, this.secondPageLines);
     }
 
     createSecondPage = () => {
-        return this.createPage(this.secondPageLines, this.props.k+"_2");
+        return this.createPage(this.secondPageLines, this.props.k+"_2", 2, true);
     }
 
     render () {
