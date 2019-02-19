@@ -8,7 +8,8 @@ export default class front2 extends Component {
 
     render() {
 
-        const nicknam = this.props.nick ? this.props.nick : this.props.name.split(" ")[0];
+        let nicknam = this.props.nick ? this.props.nick : this.props.name.split(" ")[0];
+        nicknam = nicknam.toUpperCase();
 
         return (
             <div className="card front2">
