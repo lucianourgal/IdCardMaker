@@ -25,9 +25,12 @@ render() {
             }
         }
     } // last (incomplete) page
-    const newGrou2 = new groupOfPersons("", this.props.group.principal);
-    newGrou2.setPersons(tempPersons);
-    pagesG.push(newGrou2);
+
+    if (tempPersons.length > 0) {
+        const newGrou2 = new groupOfPersons("", this.props.group.principal);
+        newGrou2.setPersons(tempPersons);
+        pagesG.push(newGrou2);
+    }
 
     const frontPages = pagesG.map( (cur, i) => 
     <Page front={true} group={cur} key={i+"_FPag"} pag={(i+1)+"_Front"} typeB={this.props.typeB}/>);
