@@ -88,3 +88,7 @@
     top: 43.5%;
     transform: rotate(270deg);
 }
+
+.smallfont {
+    font-size: 0.7em;
+}
