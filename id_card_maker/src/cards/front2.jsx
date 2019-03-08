@@ -18,8 +18,8 @@ export default class front2 extends Component {
                 <p>IDENTIDADE ESTUDANTIL</p>
                 <Picture src={this.props.name}/>
                 <div className={registryClasses}>{this.props.registry}</div>
-                <Textfield text={nicknam} label={"Nome"}/>
-                <Textfield text={this.props.course} label={"Curso"} large={true}/>
+                <Textfield text={nicknam} label={"Nome"} nickname/>
+                <Textfield text={this.props.course} label={"Curso"} large/>
             </div>
         )
 
