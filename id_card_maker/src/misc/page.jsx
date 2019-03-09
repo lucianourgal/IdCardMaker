@@ -29,7 +29,35 @@ generateTypeB = () => {
         exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={cur.name+"B"}/>);
 }
 
+renderBack2 = (cur) => {
+    return <Back2 princ={this.props.group.principal} 
+    exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={cur.name+"B"}/>
+}
+
+renderFront2 = (cur) => {
+    return <Front2 name={cur.name} course={cur.course} key={cur.name+"F"} nick={cur.nickname} registry={cur.registryNumber}/>
+}
+
 generateTypeBAlltogether = () => {
+
+    // easy cut job
+    if (this.props.group.persons.length === 4) {
+        return <>
+            { this.renderFront2(this.props.group.persons[0]) }
+            { this.renderBack2(this.props.group.persons[0]) }
+            { this.renderFront2(this.props.group.persons[3]) } 
+
+            { this.renderFront2(this.props.group.persons[1]) }
+            { this.renderBack2(this.props.group.persons[1]) }
+            { this.renderBack2(this.props.group.persons[3]) } 
+
+            { this.renderFront2(this.props.group.persons[2]) }
+            { this.renderBack2(this.props.group.persons[2]) }
+            { this.renderBack2(this.props.group.persons[3]) }
+        </>
+    }
+
+    // default
     return this.props.group.persons.map(cur =>
         <>
              <Front2 name={cur.name} course={cur.course} key={cur.name+"F"} nick={cur.nickname} registry={cur.registryNumber}/>
