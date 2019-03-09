@@ -5,11 +5,12 @@
 .card {
     display: flex;
     flex-direction: column;
+    
     text-align: bottom;
     justify-content: bottom;
 
-    width: 30%;
-    height: 32%;
+    width: 28.8%;
+    height: 31.32%;
     display: inline-block;
     border: 2px solid black;
     position: relative;
@@ -27,18 +28,16 @@
 
 .back .signature {
     position: relative;
-    float: top;
     bottom: -27.4em;  
 }
 
 .back2 .signature {
-    margin-top: 40px;
+    margin-top: 58px;
     font-size: 0.8em;
 }
 
 .job {
     font-size: 0.7em;
-    float: top;
 }
 
 .back .job {
