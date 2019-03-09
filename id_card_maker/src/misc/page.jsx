@@ -17,12 +17,26 @@ generateTypeA = () => {
 }
 
 generateTypeB = () => {
+
+    if (this.props.allTogether)
+        return this.generateTypeBAlltogether();
+
     return this.props.front ?  
         this.props.group.persons.map(cur => 
         <Front2 name={cur.name} course={cur.course} key={cur.name+"F"} nick={cur.nickname} registry={cur.registryNumber}/>) :
         this.props.group.persons.map(cur => 
         <Back2 princ={this.props.group.principal} 
         exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={cur.name+"B"}/>);
+}
+
+generateTypeBAlltogether = () => {
+    return this.props.group.persons.map(cur =>
+        <>
+             <Front2 name={cur.name} course={cur.course} key={cur.name+"F"} nick={cur.nickname} registry={cur.registryNumber}/>
+             <Back2 princ={this.props.group.principal} 
+                    exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={cur.name+"B"}/>
+        </>
+    );
 }
 
 
@@ -35,8 +49,7 @@ render () {
     return (
         <div className="page">
             { personsJsx }
-            <p>Page {this.props.pag }. </p>
-            <p>Software developed by Luciano Urgal Pando</p>
+            <p className="pagesig">Page {this.props.pag }. Software developed by Luciano Urgal Pando</p>
         </div>
     )
 

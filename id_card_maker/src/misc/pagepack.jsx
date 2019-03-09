@@ -6,7 +6,7 @@ export default class Pagepack extends Component {
 // One front and one back
 render() {
 
-    const personsPerPage = 9;
+    const personsPerPage = 4;
     const allPersons = this.props.group.persons;
     // console.log("Pagepack.jsx: We have a total of " + allPersons.length + " persons.");
 
@@ -32,17 +32,19 @@ render() {
         pagesG.push(newGrou2);
     }
 
-    const frontPages = pagesG.map( (cur, i) => 
-    <Page front={true} group={cur} key={i+"_FPag"} pag={(i+1)+"_Front"} typeB={this.props.typeB}/>);
+    //const frontPages = pagesG.map( (cur, i) => 
+    //<Page front={true} group={cur} key={i+"_FPag"} pag={(i+1)+"_Front"} typeB={this.props.typeB}/>);
 
-    const backPages = pagesG.map( (cur, i) => 
-    <Page front={false} group={cur} key={i+"_BPag"} pag={(i+1)+"_Back"} typeB={this.props.typeB}/>);
+    //const backPages = pagesG.map( (cur, i) => 
+    //<Page front={false} group={cur} key={i+"_BPag"} pag={(i+1)+"_Back"} typeB={this.props.typeB}/>);
+
+    const pagesR = pagesG.map( (cur, i) => 
+    <Page allTogether group={cur} key={i+"_Pag"} pag={(i+1)+"_FnB"} typeB={this.props.typeB}/>);
 
     return (
      this.props.hide  ? null :
     <div className="allPages">
-        { frontPages }
-        { backPages }
+       { pagesR }
     </div>
     )
 

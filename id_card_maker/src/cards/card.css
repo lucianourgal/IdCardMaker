@@ -9,7 +9,7 @@
     justify-content: bottom;
 
     width: 30%;
-    height: 30%;
+    height: 32%;
     display: inline-block;
     border: 2px solid black;
     position: relative;
@@ -93,3 +93,4 @@
 .smallfont {
     font-size: 0.7em;
 }
+
