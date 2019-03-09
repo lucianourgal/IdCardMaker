@@ -1,6 +1,6 @@
 .tf {
 border: 1px black solid;
-margin: .25em .7em;   
+margin: 4px .7em;   
 display: flex;
 align-items: center;
 background-color: #f4f4f4;
@@ -36,10 +36,10 @@ border-radius: 10px;
 .back2 .data{
     display: block;
     width: 60%;
-    height: 1.2em;
+    height: 19px;
     text-align: left;
     padding-left: 3em;
-    margin-top: 1.275em;
+    margin-top: 10px;
     margin-bottom: 2px;
 }
 
