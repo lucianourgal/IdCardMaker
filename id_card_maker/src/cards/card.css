@@ -12,7 +12,7 @@
     width: 28.8%;
     height: 31.32%;
     display: inline-block;
-    border: 2px solid black;
+    border: 2px dashed #e9e9e9;
     position: relative;
     box-sizing: border-box;
 }
