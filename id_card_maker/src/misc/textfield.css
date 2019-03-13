@@ -26,6 +26,7 @@ border-radius: 10px;
 .large {
     height: 3.2em;
     vertical-align: bottom;
+    line-height: 1.6em;
 }
 
 .data {

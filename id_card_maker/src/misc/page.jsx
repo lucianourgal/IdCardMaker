@@ -29,13 +29,15 @@ generateTypeB = () => {
         exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={cur.name+"B"}/>);
 }
 
-renderBack2 = (cur) => {
+renderBack2 = (cur, fake) => {
+    const key1 = fake ? cur.name+"_Fake" : cur.name+"B";
     return <Back2 princ={this.props.group.principal} 
-    exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={cur.name+"B"}/>
+    exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={key1}/>
 }
 
-renderFront2 = (cur) => {
-    return <Front2 name={cur.name} course={cur.course} key={cur.name+"F"} nick={cur.nickname} registry={cur.registryNumber}/>
+renderFront2 = (cur, fake) => {
+    const key1 = fake ? cur.name+"_Fake" : cur.name+"F";
+    return <Front2 name={cur.name} course={cur.course} key={key1} nick={cur.nickname} registry={cur.registryNumber}/>
 }
 
 generateTypeBAlltogether = () => {
@@ -53,7 +55,7 @@ generateTypeBAlltogether = () => {
 
             { this.renderFront2(this.props.group.persons[2]) }
             { this.renderBack2(this.props.group.persons[2]) }
-            { this.renderBack2(this.props.group.persons[3]) }
+            { this.renderBack2(this.props.group.persons[3], true) }
         </>
     }
 
@@ -75,7 +77,7 @@ render () {
     const personsJsx =  this.props.typeB ? this.generateTypeB() : this.generateTypeA();
         
     return (
-        <div className="page">
+        <div className="page" key={this.props.pag}>
             { personsJsx }
             <p className="pagesig">Page {this.props.pag }. Software developed by Luciano Urgal Pando</p>
         </div>

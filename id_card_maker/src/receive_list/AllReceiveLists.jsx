@@ -40,7 +40,7 @@ export default class allLists extends Component {
 
         return (
             this.props.hide ? null :
-            <div className="allPages">
+            <div className="allPages" key={"RecieveLists"}>
                 { pages }
             </div>
         )
