@@ -29,10 +29,10 @@ generateTypeB = () => {
         exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={cur.name+"B"}/>);
 }
 
-renderBack2 = (cur, fake) => {
+renderBack2 = (cur, fake, rev) => {
     const key1 = fake ? cur.name+"_Fake" : cur.name+"B";
     return <Back2 princ={this.props.group.principal} 
-    exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={key1}/>
+    exp={cur.expiresIn} rg={cur.rg} nasc={cur.birthDate} name={cur.name} key={key1} pontacabeca={rev}/>
 }
 
 renderFront2 = (cur, fake) => {
@@ -51,7 +51,7 @@ generateTypeBAlltogether = () => {
 
             { this.renderFront2(this.props.group.persons[1]) }
             { this.renderBack2(this.props.group.persons[1]) }
-            { this.renderBack2(this.props.group.persons[3]) } 
+            { this.renderBack2(this.props.group.persons[3], false, true) } 
 
             { this.renderFront2(this.props.group.persons[2]) }
             { this.renderBack2(this.props.group.persons[2]) }

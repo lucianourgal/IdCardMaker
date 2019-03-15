@@ -93,3 +93,6 @@
     font-size: 0.7em;
 }
 
+.pontacabeca {
+    transform: rotate(180deg);
+}
