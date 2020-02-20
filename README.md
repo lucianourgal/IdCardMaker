@@ -12,7 +12,7 @@
 
 # Notes
 - This was my first react project, developed at early 2019<br>
-- Project ![centralize-portraits](https://github.com/lucianourgal/centralize-portraits) was later created to optimize pictures organizing and centralizing work <br>
+- Project [centralize-portraits](https://github.com/lucianourgal/centralize-portraits) was later created to optimize pictures organizing and centralizing work <br>
 
 # Author
 - Luciano Urgal Pando <br>
