@@ -12,7 +12,8 @@
 
 # Notes
 - This was my first react project, developed at early 2019<br>
-- Project [centralize-portraits](https://github.com/lucianourgal/centralize-portraits) was later created to optimize pictures organizing and centralizing work <br>
+- Project [centralize-portraits](https://github.com/lucianourgal/centralize-portraits) was later created to optimize pictures organizing (using the files tags) and centralizing (using face recognition and image cropping) <br>
+- Project [sheets-sync](https://github.com/lucianourgal/sheets-sync) was later created to automate syncing between local spreadsheet (which generates the csv string used as input for [idCardMaker](https://github.com/lucianourgal/IdCardMaker) project) and external spreedsheet provided by the academic secretariat which contains all students data <br>
 
 # Author
 - Luciano Urgal Pando <br>
