@@ -8,7 +8,7 @@ export default class picbox extends Component {
         let image;
         
             try {
-                image = <img src={require('../customimg/' + this.props.src + '.jpg')}
+                image = <img src={require('../customimg/' + this.props.src + '.JPG')}
                             alt={"Picture of " + this.props.src}/>;
             } catch {
                 image = "'"+this.props.src+".JPG' not found";
