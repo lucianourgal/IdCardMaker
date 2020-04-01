@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./picturebox.css";
 
-export default class picbox extends Component {
+ const PictureBox = (props) => {
 
-    render () {
+    let image;
 
-        let image;
-        
-            try {
-                image = <img src={require('../customimg/' + this.props.src + '.JPG')}
-                            alt={"Picture of " + this.props.src}/>;
-            } catch {
-                image = "'"+this.props.src+".JPG' not found";
-                console.log(image + ". Perhaps too large?");
-            }
-        
-        return (
-            <div className="picturebox">
-                { image }
-            </div>
-        )
+    try {
+        image = <img src={require('../customimg/' + props.src + '.jpg')}
+            alt={"Picture of " + props.src} />;
+    } catch {
+        image = "'" + props.src + ".jpg' not found";
+        console.log(image + ". Perhaps too large?");
     }
+
+    return (
+        <div className="picturebox">
+            {image}
+        </div>
+    )
 }
+
+export default PictureBox;
