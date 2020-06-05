@@ -1,3 +1,5 @@
+[![buy_me_a_coffee_badge](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/lucianourgal)
+
 # IdCardMaker
 - Uses react.js to create a series of identification cards<br>
 - Created to generate around 600 student identification cards per year<br>
