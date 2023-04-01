@@ -20,6 +20,10 @@ button {
   height: 40px;
 }
 
+button:hover {
+  color: green;
+}
+
 header {
   background-color: darkolivegreen;
   padding: 1.5em;
@@ -34,5 +38,8 @@ input {
 
 .princChoose {
   width: 100%;
+}
 
+span {
+  margin-right: 20px;
 }
