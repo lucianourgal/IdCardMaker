@@ -32,7 +32,6 @@
 }
 
 .back2 .signature {
-    margin-top: 58px;
     font-size: 0.8em;
 }
 
@@ -95,4 +94,14 @@
 
 .pontacabeca {
     transform: rotate(180deg);
+}
+
+.signatureImage {
+    background-image: url("../img/signature.PNG");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 16%;
+    width: 156px;
+    height: 48px;
+    margin-top: 8px;
 }

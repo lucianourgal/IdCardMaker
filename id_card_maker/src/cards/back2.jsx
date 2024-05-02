@@ -13,6 +13,7 @@ const Back2 = (props) => {
             <Textfield text={props.rg} label={"RG"} />
             <Textfield text={props.nasc} label={"Data de Nascimento"} />
             <Textfield text={props.exp} label={"Validade"} />
+            <div className="signatureImage" />
             <div className="signature">{props.princ}</div>
             <div className="job">{"Diretor Geral"}</div>
             <img src={require("../img/IFPRbottom.PNG")} alt={"IFPR address and extended name"} />
