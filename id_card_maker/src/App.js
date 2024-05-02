@@ -19,7 +19,7 @@ class App extends Component {
     this.state = {
       text: txaDefaultText,
       renderPages: false,
-      principal: "João Claudio Madureira",
+      principal: "Gismar Schilive de Souza",
       typeB: true, 
       hideCards: false,
       hideRecieveLists: false
