@@ -23,3 +23,7 @@
 # Donations
 - If you liked this project, please donate bitcoin to address:
 bc1qdatj9208rx9rjt58zc2q432ggwfdvzklt4v9x5 <br>
+
+# Example of cards generated with tool
+
+![image](https://github.com/lucianourgal/IdCardMaker/assets/7585947/1d0be87a-6d9d-473f-b811-1672e59722a4)
